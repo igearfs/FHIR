@@ -1,0 +1,35 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IntelliJ IDEA specific files
+.idea/.name
+.idea/compiler.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/libraries/
+.idea/artifacts/
+
+# Ignore build output directories
+out/
+target/
+build/
+
+# Logs and IDE specific files
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# .env file (optional, if you're storing sensitive info)
+.env
+data/
+README_furutre_md
