@@ -55,14 +55,13 @@ services:
 
   db:
     image: postgres:17.2
-    container_name: fhir-db
     restart: always
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: hapi
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     volumes:
-      - ./data/postgres_fhir:/var/lib/postgresql/data  # Persistent data storage
+      - ./hapi.postgress.data:/var/lib/postgresql/data
 
 configs:
   hapi:
